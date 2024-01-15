@@ -24,11 +24,19 @@ body {
     margin: 50px 0;
 }
 
+.nav-logo-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .navbar h1 {
     font-size: 36px;
     font-weight: 800;
     margin: 0;
     padding: 0;
+    padding-left: 10px;
 }
 
 .nav-links {
@@ -96,4 +104,50 @@ ul li a {
     padding: 0;
     border: none;
     border-radius: 8px;
+}
+
+/* Popular Section  */
+
+/* Destination Section  */
+
+.destination-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.destination {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+#destiny-1 {
+    background-image: url('images/maldives.png');
+}
+
+#destiny-2 {
+    background-image: url('images/indonesia.png');
+}
+
+#destiny-3 {
+    background-image: url('images/srilanka.png');
+}
+
+#destiny-4 {
+    background-image: url('images/northamerica.png');
+}
+
+#destiny-5 {
+    background-image: url('images/kashmir.png');
+}
+
+#destiny-6 {
+    background-image: url('images/bangladesh.png');
+}
+
+#destiny-7 {
+    background-image: url('images/bandarban.png');
 }
