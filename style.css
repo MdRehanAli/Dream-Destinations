@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: "Mulish", sans-serif;
+    overflow-x: hidden;
 }
 
 header,
@@ -41,7 +42,7 @@ main {
     font-weight: 800;
 }
 
-.Section-title-3{
+.Section-title-3 {
     font-size: 20px;
     font-weight: 800;
 }
@@ -88,6 +89,10 @@ main {
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
+}
+
+.navbar ul{
+    padding: 0;
 }
 
 ul li a {
@@ -178,6 +183,10 @@ select {
     margin: 100px 0px;
 }
 
+.popular-section img {
+    width: 100%;
+}
+
 .popular-section-content {
     display: flex;
     flex-direction: column;
@@ -231,10 +240,16 @@ select {
 
 }
 
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
 .destination-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 24px;
 }
 
@@ -322,7 +337,7 @@ select {
     border-radius: 16px;
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
-    width: 50%;
+    max-width: 50%;
 }
 
 
@@ -415,6 +430,7 @@ select {
     justify-content: space-between;
     align-items: start;
     margin-bottom: 30px;
+    gap: 24px;
 
 }
 
@@ -470,7 +486,139 @@ footer {
 }
 
 footer hr {
-    width: 872px;
+    max-width: 872px;
     margin: 50px auto;
     background-color: rgba(19, 19, 24, 0.10);
+}
+
+
+/* Media Query for Responsibe  */
+
+@media screen and (max-width: 600px) {
+
+    header,
+    main {
+        margin: 20px;
+    }
+
+    .navbar h1 {
+        font-size: 22px;
+    }
+
+    .navbar,
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Newsletter-offer img {
+        width: 100%;
+    }
+
+
+    .top-form {
+        flex-direction: column;
+        margin: 32px 24px;
+        width: 85%;
+    }
+
+    #top-title {
+        font-size: 22px;
+        margin-top: 32px;
+        /* margin-bottom: 16px; */
+    }
+
+    #top-content {
+        font-size: 14px;
+        padding: 16px 16px 0px 16px;
+        margin: 0;
+    }
+
+    .Section-title-2 {
+        font-size: 20px;
+    }
+
+    input {
+        width: 85%;
+        margin: 0 20px;
+    }
+
+    .field-area,
+    button {
+        width: 90%;
+        margin: 0 20px;
+    }
+
+    .adventure-article {
+        width: 100%;
+    }
+
+    .choose-section,
+    .popular-section {
+        margin: 24px 0;
+    }
+
+
+    .popular-section, .row {
+        flex-direction: column;
+    }
+
+    .Section-title {
+        font-size: 20px;
+    }
+
+    .section-article {
+        font-size: 14px;
+    }
+
+    .field-area,
+    button {
+        width: auto;
+    }
+
+    .flexible-container,
+    .choose-flexible-container,
+    .place-section,
+    .Newsletter {
+        flex-direction: column;
+        margin: 24px 0;
+    }
+
+    .inner-flexible {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cont-3 {
+        max-width: 100%;
+    }
+
+    .adventure-articl,
+    .place-content {
+        width: 100%;
+    }
+
+    .adventure-article {
+        grid-template-columns: none;
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .deal-content-right,
+    .deal-content-left {
+        padding: 185px 16px 16px 16px;
+    }
+
+    .mountain {
+        max-width: 100%;
+    }
+
+    .offer-button {
+        left: 150px;
+        top: -135px;
+    }
+
+    /* .Newsletter, {
+    margin: 24px 0;
+} */
+
 }
